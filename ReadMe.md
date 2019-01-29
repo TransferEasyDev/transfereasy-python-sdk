@@ -1,7 +1,6 @@
 
 ![TransferEasy](https://s.transfereasy.com/logo/logo-2-black.png)
-<br>
-![Travis](https://api.travis-ci.org/nukeop/nuclear.svg?branch=master)
+
 # 汇通天下, 无处不达
 
 * [官方网站](https://www.transfereasy.com)
