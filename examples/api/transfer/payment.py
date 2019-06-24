@@ -7,5 +7,6 @@ if __name__ == '__main__':
 
     param = {
         'no': 'transfer_no',
+        # "out_trade_id": "your_trade_id"
     }
     tran.payment(param)

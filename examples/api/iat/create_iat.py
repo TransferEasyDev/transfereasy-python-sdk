@@ -11,6 +11,7 @@ if __name__ == '__main__':
         'send_amount': 1000,
         'send_currency': 'USD',
         "purpose": "留学",
-        "memo": "测试"
+        "memo": "测试",
+        # "out_trade_id": "your_trade_id",
     }
     iat.create_iat(param)

@@ -6,6 +6,7 @@ if __name__ == '__main__':
     tran = Transfer()
 
     param = {
-        "no": "transfer_no"
+        "no": "transfer_no",
+        # "out_trade_id": "your_trade_id"
     }
     tran.get_transfer(param)

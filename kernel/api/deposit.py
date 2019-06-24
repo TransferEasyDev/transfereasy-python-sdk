@@ -16,9 +16,11 @@ class Deposit(object):
     def create_deposit(self, params):
         param_schema = Schema({
             'payer_bank_acc_number': {'type': basestring, 'required': False},
+            'payer_bank_acc_no': {'type': basestring, 'required': False},
             'escrow_bank_acc_number': {'type': basestring, 'required': False},
             'currency': {'type': basestring, 'required': True},
             'amount': {'type': basestring, 'required': True},
+            'out_trade_id': {'type': basestring, 'required': False},
         }, strict=False)
 
         param_schema.validate(params)  # 检测不通过直接抛异常

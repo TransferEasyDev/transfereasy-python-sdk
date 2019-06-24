@@ -6,5 +6,6 @@ if __name__ == '__main__':
 
     param = {
         "no": "deposit_no",
+        # "out_trade_id": "your_trade_id"
     }
     dep.cancel_deposit(param)

@@ -6,6 +6,7 @@ if __name__ == '__main__':
     iat = IAT()
 
     param = {
-        "no": "iat_no"
+        "no": "iat_no",
+        # "out_trade_id": "your_trade_id",
     }
     iat.get_iat(param)

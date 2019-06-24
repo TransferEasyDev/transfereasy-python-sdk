@@ -7,5 +7,6 @@ if __name__ == '__main__':
 
     param = {
         'no': 'invoice_no',
+        # "out_trade_id": "your_trade_id"
     }
     invo.cancel_invoice(param)

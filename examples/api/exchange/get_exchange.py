@@ -6,6 +6,8 @@ if __name__ == '__main__':
     exc = Exchange()
 
     param = {
-        "no": "exchange_no"
+        "no": "exchange_no",
+        # "out_trade_id": "your_trade_id",
+
     }
     exc.get_exchange(param)

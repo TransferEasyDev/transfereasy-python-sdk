@@ -6,6 +6,7 @@ if __name__ == '__main__':
     invo = Invoice()
 
     param = {
-        "no": "invoice_no"
+        "no": "invoice_no",
+        # "out_trade_id": "your_trade_id"
     }
     invo.get_invoice(param)

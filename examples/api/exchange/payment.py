@@ -7,5 +7,6 @@ if __name__ == '__main__':
 
     param = {
         'no': 'exchange_no',
+        # "out_trade_id": "your_trade_id",
     }
     exc.payment(param)

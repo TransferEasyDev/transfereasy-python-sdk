@@ -138,3 +138,11 @@ class Account(object):
             url='account',
             method='GET',
         )
+
+    @transfereasy
+    def development(self, params):
+        return KeyVariables(
+            params=params,
+            url='development',
+            method='POST',
+        )

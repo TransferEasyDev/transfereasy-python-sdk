@@ -9,7 +9,8 @@ if __name__ == '__main__':
         "buy_amount": 0,
         "sell_currency": "CNH",
         "sell_amount": 1000,
-        "buy_currency": "USD"
+        "buy_currency": "USD",
+        "out_trade_id": "your_trade_id",
     }
 
     exc.create_exchange(param)

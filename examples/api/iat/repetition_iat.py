@@ -7,5 +7,7 @@ if __name__ == '__main__':
 
     param = {
         'no': 'iat_no',
+        # "ex_out_trade_id": "your_trade_id",
+        # "new_out_trade_id": "your_trade_id"
     }
     iat.repetition_iat(param)

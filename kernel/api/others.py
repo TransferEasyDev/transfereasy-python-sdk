@@ -42,6 +42,11 @@ class Others(object):
             'deposit_no': {'type': basestring, 'required': False},
             'invoice_no': {'type': basestring, 'required': False},
             'iat_no': {'type': basestring, 'required': False},
+            'out_transfer_id': {'type': basestring, 'required': False},
+            'out_exchange_id': {'type': basestring, 'required': False},
+            'out_deposit_id': {'type': basestring, 'required': False},
+            'out_invoice_id': {'type': basestring, 'required': False},
+            'out_iat_id': {'type': basestring, 'required': False},
         }, strict=False)
 
         param_schema.validate(params)  # 检测不通过直接抛异常
