@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
-    import json
     from kernel.api.sub_bankaccount import SubBankAccount
 
     sbacc = SubBankAccount()
     params = {
+        'no': '',
         'country': "HKG",
         'shop': {
                 'type': 'AMAZON',
@@ -22,4 +22,4 @@ if __name__ == '__main__':
         }
     }
 
-    sbacc.create_sub_bankaccount(params)
+    sbacc.update_sub_bankaccount(params)

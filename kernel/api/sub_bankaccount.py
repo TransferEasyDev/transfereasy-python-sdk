@@ -11,57 +11,23 @@ class SubBankAccount(object):
     def __init__(self):
         pass
 
-    def __validate_params(self, params):
-            param_schema = Schema({
-                'apply_data': {'type': basestring, 'required': True},
-            }, strict=False)
-
-            param_schema.validate(params)  # 检测不通过直接抛异常
-            param_schema.apply_defaults(params)  # attach 默认值
 
     @transfereasy
-    def com_create_sub_bankaccount(self, params, files):
-
-        self.__validate_params(params)
+    def create_sub_bankaccount(self, params):
 
         return KeyVariables(
-            params=params,
-            url='account/company/sub_bank_account',
+            params=json.dumps(params),
+            url='account/sub_bank_account',
             method='POST',
-            files=files
         )
 
     @transfereasy
-    def com_update_sub_bankaccount(self, params, files):
-        self.__validate_params(params)
+    def update_sub_bankaccount(self, params):
 
         return KeyVariables(
-            params=params,
-            url='account/company/sub_bank_account',
+            params=json.dumps(params),
+            url='account/sub_bank_account',
             method='PUT',
-            files=files
-        )
-
-    @transfereasy
-    def ind_create_sub_bankaccount(self, params, files):
-        self.__validate_params(params)
-
-        return KeyVariables(
-            params=params,
-            url='account/individual/sub_bank_account',
-            method='POST',
-            files=files
-        )
-
-    @transfereasy
-    def ind_update_sub_bankaccount(self, params, files):
-        self.__validate_params(params)
-
-        return KeyVariables(
-            params=params,
-            url='account/individual/sub_bank_account',
-            method='PUT',
-            files=files
         )
 
     @transfereasy
